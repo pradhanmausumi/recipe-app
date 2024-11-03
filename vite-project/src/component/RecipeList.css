@@ -1,0 +1,65 @@
+/* RecipeList.css */
+
+.recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* Space between recipe cards */
+    margin: 20px;
+}
+
+.recipe-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px;
+    /* Fixed width for recipe cards */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+.recipe-card img {
+    width: 100%;
+    /* Make image fill the card */
+    height: 150px;
+    /* Fixed height */
+    object-fit: cover;
+    /* Cover the space while maintaining aspect ratio */
+}
+
+.recipe-title {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination button {
+    padding: 10px 15px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
+
+.pagination button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}

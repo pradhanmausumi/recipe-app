@@ -1,0 +1,49 @@
+/* Search.css */
+
+.search-form {
+    display: flex;
+    /* Use flexbox to align items horizontally */
+    justify-content: center;
+    /* Center the form horizontally */
+    margin: 20px 0;
+    /* Vertical margin for spacing */
+}
+
+.search-form input {
+    padding: 10px;
+    /* Padding inside the input */
+    border: 1px solid #ddd;
+    /* Light border */
+    border-radius: 5px;
+    /* Rounded corners */
+    width: 300px;
+    /* Fixed width for the input */
+    font-size: 1em;
+    /* Font size for input text */
+    margin-right: 10px;
+    /* Space between input and button */
+}
+
+.search-form button {
+    padding: 10px 15px;
+    /* Padding inside the button */
+    border: none;
+    /* Remove default border */
+    border-radius: 5px;
+    /* Rounded corners for button */
+    background-color: #007bff;
+    /* Button color */
+    color: white;
+    /* Text color */
+    font-size: 1em;
+    /* Font size for button text */
+    cursor: pointer;
+    /* Cursor pointer on hover */
+    transition: background-color 0.3s;
+    /* Transition effect for hover */
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+    /* Darker color on hover */
+}
